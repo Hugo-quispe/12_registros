@@ -18,11 +18,16 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(documentacion[i].edad>50){
-            cout<<"la edad de esta persona "<<documentacion[i].nombre<< "es mayor a 50"<<endl;
+            cout<<"la edad de "<<documentacion[i].nombre<< " es mayor a 50"<<endl;
             m++;
         }
     }
     cout<<"en total las personas mayores a 50 es: "<<m<<endl;
     r=p/n;
     cout<<"la edad promedio es: "<<r<<endl;
+    for(int i=0;i<n;i++){
+        cout<<"el nombre de esta persona es: "<<documentacion[i].nombre<<endl;
+        cout<<"el DNI de esta persona es: "<<documentacion[i].DNI<<endl;
+        cout<<"la edad que tiene esta persona es: "<<documentacion[i].edad<<endl;
+    }
 }
